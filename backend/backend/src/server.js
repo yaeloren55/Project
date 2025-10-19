@@ -9,6 +9,8 @@ const authRoutes = require('./routes/authRoutes');
 const clothingRoutes = require('./routes/clothingRoutes');
 const outfitRoutes = require('./routes/outfitRoutes');
 const analysisRoutes = require('./routes/analysisRoutes');
+const tryOnRoutes = require('./routes/tryOn');
+const publicRoutes = require('./routes/publicRoutes');
 
 // Create Express app
 const app = express();
@@ -30,6 +32,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/clothes', clothingRoutes);
 app.use('/api/outfits', outfitRoutes);
 app.use('/api/analysis', analysisRoutes);
+app.use('/api/try-on', tryOnRoutes);
+app.use('/api/public', publicRoutes);  // Public routes - no auth required
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

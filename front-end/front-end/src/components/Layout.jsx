@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
         <nav>
           <Link to="/wardrobe">My Wardrobe</Link>
           <Link to="/outfits">Outfit Ideas</Link>
+          <Link to="/try-outfits">Try Outfits</Link>
           <button 
             onClick={() => navigate('/wardrobe/add')} 
             className={styles.addItemBtn}

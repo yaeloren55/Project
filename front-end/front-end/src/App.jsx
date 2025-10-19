@@ -9,6 +9,7 @@ import Wardrobe from './pages/Wardrobe';
 import AddItem from './pages/AddItem';
 import ItemDetail from './pages/ItemDetail';
 import Outfits from './pages/Outfits';
+import TryOutfits from './pages/TryOutfits';
 
 // Protected Route Component
 const ProtectedRoute = () => {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/wardrobe/add" element={<AddItem />} />
           <Route path="/wardrobe/item/:id" element={<ItemDetail />} />
           <Route path="/outfits" element={<Outfits />} />
+          <Route path="/try-outfits" element={<TryOutfits />} />
         </Route>
       </Routes>
     </BrowserRouter>

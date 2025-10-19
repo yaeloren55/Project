@@ -1,0 +1,423 @@
+.tryOutfits {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.tryOutfits h2 {
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Left Side - Upload and Controls */
+.leftSide {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.uploadSection {
+  background: #FFFFFF;
+  padding: 1.25rem;
+  border: 1px solid #E5E5E5;
+}
+
+.sectionLabel {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #000000;
+  margin-bottom: 0.75rem;
+}
+
+.uploadBox {
+  position: relative;
+  border: 2px dashed #D0D0D0;
+  background: #FAFAFA;
+  padding: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.uploadBox:hover {
+  border-color: #000000;
+  background: #F5F5F5;
+}
+
+.fileInput {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.uploadLabel {
+  cursor: pointer;
+  display: block;
+}
+
+.uploadIcon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.uploadLabel p {
+  color: #000000;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.uploadHint {
+  color: #767676;
+  font-size: 0.75rem;
+}
+
+.imagePreview {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #F0F0F0;
+}
+
+.imagePreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.removeBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: #000000;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.removeBtn:hover {
+  background: #333333;
+}
+
+/* Prompt Section */
+.promptSection {
+  background: #FFFFFF;
+  padding: 1rem;
+  border: 1px solid #E5E5E5;
+}
+
+.promptInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #E5E5E5;
+  font-size: 0.8rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 50px;
+  max-height: 100px;
+  transition: border-color 0.2s;
+}
+
+.promptInput:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+/* Generate Button */
+.generateSection {
+  background: #FFFFFF;
+  padding: 1rem;
+  border: 1px solid #E5E5E5;
+}
+
+.generateBtn {
+  width: 100%;
+  background: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.generateBtn:hover:not(:disabled) {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.generateBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.selectedCount {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #767676;
+}
+
+/* Middle - Result Area */
+.middleSection {
+  flex: 1;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+}
+
+.resultArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAFAFA;
+  border: 1px solid #F0F0F0;
+  min-height: 500px;
+  position: relative;
+}
+
+.resultImage {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.resultImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.resultPlaceholder {
+  text-align: center;
+  color: #767676;
+  font-size: 0.875rem;
+  padding: 2rem;
+}
+
+.resultPlaceholder p {
+  margin: 0 0 0.5rem 0;
+}
+
+.placeholderIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.resultActions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.downloadBtn {
+  background: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 0.625rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.downloadBtn:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.clearBtn {
+  background: #FFFFFF;
+  color: #000000;
+  border: 1px solid #E5E5E5;
+  padding: 0.625rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clearBtn:hover {
+  border-color: #000000;
+  background: #F5F5F5;
+}
+
+/* Right Side - Wardrobe */
+.rightSide {
+  width: 450px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wardrobeHeader {
+  margin-bottom: 1rem;
+}
+
+.wardrobeScroll {
+  height: 420px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.wardrobeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  max-width: 400px;
+}
+
+.wardrobeItem {
+  position: relative;
+  border: 2px solid #E5E5E5;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.wardrobeItem:hover {
+  border-color: #000000;
+  transform: translateY(-2px);
+}
+
+.wardrobeItem.selected {
+  border-color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wardrobeItem img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.itemOverlay {
+  padding: 0.5rem;
+  background: #FFFFFF;
+  min-height: 45px;
+}
+
+.itemName {
+  font-size: 0.7rem;
+  color: #000000;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemCategory {
+  font-size: 0.65rem;
+  color: #767676;
+  margin: 0;
+}
+
+.selectedMark {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #000000;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.emptyWardrobe {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #767676;
+}
+
+.emptyWardrobe p {
+  margin: 0 0 0.5rem 0;
+}
+
+.emptyHint {
+  font-size: 0.75rem;
+}
+
+/* Loading Spinner */
+.loadingSpinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #E5E5E5;
+  border-top: 3px solid #000000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Scrollbar styling */
+.wardrobeScroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wardrobeScroll::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+
+.wardrobeScroll::-webkit-scrollbar-thumb {
+  background: #D0D0D0;
+  border-radius: 3px;
+}
+
+.wardrobeScroll::-webkit-scrollbar-thumb:hover {
+  background: #B0B0B0;
+}
