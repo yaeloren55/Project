@@ -1,0 +1,86 @@
+.filterBar {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.filterTitle {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #000000;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filterLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #767676;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #E5E5E5;
+  background: #FFFFFF;
+  font-size: 0.875rem;
+  color: #000000;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.searchInput::placeholder {
+  color: #767676;
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #E5E5E5;
+  background: #FFFFFF;
+  font-size: 0.875rem;
+  color: #000000;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.clearBtn {
+  background: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.clearBtn:hover {
+  background: #FFFFFF;
+  color: #000000;
+}

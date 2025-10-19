@@ -1,0 +1,102 @@
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAFAFA;
+}
+
+.loginForm {
+  background: #FFFFFF;
+  padding: 3rem 2rem;
+  border-radius: 0;
+  border: 1px solid #E5E5E5;
+  width: 100%;
+  max-width: 400px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.loginForm h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.error {
+  background: #FFFFFF;
+  color: #000000;
+  padding: 10px;
+  border: 1px solid #000000;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.loginForm input {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #E5E5E5;
+  background: #FFFFFF;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.loginForm input:focus {
+  border-color: #000000;
+}
+
+.loginForm button {
+  width: 100%;
+  padding: 12px;
+  background: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.loginForm button:hover:not(:disabled) {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.loginForm button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loginForm p {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #767676;
+  font-size: 0.875rem;
+}
+
+.loginForm a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.hint {
+  background: #e7f3ff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #0056b3;
+  margin: 10px 0;
+}

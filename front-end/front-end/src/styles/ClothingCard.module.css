@@ -1,0 +1,182 @@
+.card {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  border-color: #000000;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.features {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+.featureTag {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #000000;
+  padding: 2px 4px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.info {
+  padding: 0.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mainInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.info h3 {
+  font-size: 0.75rem;
+  margin: 0;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  flex: 1;
+  line-height: 1.2;
+}
+
+.brand {
+  color: #000000;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  background: #FAFAFA;
+  padding: 2px 4px;
+  border: 1px solid #E5E5E5;
+  white-space: nowrap;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  font-size: 0.7rem;
+  color: #767676;
+}
+
+.dot {
+  color: #E5E5E5;
+}
+
+.category {
+  color: #000000;
+  font-weight: 500;
+}
+
+.color {
+  color: #000000;
+}
+
+.pattern {
+  font-style: italic;
+}
+
+.material {
+  text-transform: capitalize;
+}
+
+.fit {
+  text-transform: capitalize;
+}
+
+.style {
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.size {
+  font-weight: 500;
+  color: #000000;
+}
+
+.seasonRow,
+.occasionRow {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.65rem;
+  padding-top: 0.2rem;
+  border-top: 1px solid #FAFAFA;
+}
+
+.seasonLabel,
+.occasionLabel {
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.seasons,
+.occasions {
+  color: #767676;
+  flex: 1;
+}
+
+/* Legacy styles for backward compatibility */
+.info p {
+  font-size: 0.875rem;
+  color: #767676;
+  margin-bottom: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .imageContainer {
+    height: 200px;
+  }
+  
+  .info {
+    padding: 0.75rem;
+  }
+  
+  .info h3 {
+    font-size: 0.813rem;
+  }
+  
+  .detailRow {
+    font-size: 0.7rem;
+  }
+}

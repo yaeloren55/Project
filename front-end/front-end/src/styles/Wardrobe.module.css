@@ -1,0 +1,40 @@
+.wardrobe {
+  width: 100%;
+  background: #FAFAFA;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.sidebar {
+  width: 300px;
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #767676;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem;
+  color: #767676;
+  font-size: 1rem;
+}
